@@ -28,13 +28,13 @@ class Scraper
         a = anchor['href']
         case
         when a.include?('twitter')
-          student_file[:twitter] = a
+          student_profile[:twitter] = a
         when a.include?('link')
-          student_file[:linkedin] = a
+          student_profile[:linkedin] = a
         when a.include?('git')
-          student_file[:github] = a
+          student_profile[:github] = a
         else
-           student_file[:blog] = a
+           student_profile[:blog] = a
         end
     end
     student_profile
