@@ -27,7 +27,7 @@ class Scraper
       doc.css("div.social-icon-container a").each do |anchor|
         a = anchor['href']
         case
-        when a.include?('twit')
+        when a.include?('twitter')
           student_file[:twitter] = a
         when a.include?('link')
           student_file[:linkedin] = a
